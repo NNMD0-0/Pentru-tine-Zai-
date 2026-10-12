@@ -21,8 +21,8 @@ strong{color:#ffc0d4}
 .hint{text-align:center;color:#999;font-size:14px}
 .heart-page{position:fixed;inset:0;z-index:10;display:none;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;background:radial-gradient(circle at center,#180a12 0%,#050507 55%,#000 100%)}
 #heartContainer{position:relative;width:min(92vw,750px);height:min(75vh,650px);animation:float 3s ease-in-out infinite}
-.love-word{position:absolute;white-space:nowrap;transform:translate(-50%,-50%) scale(.2);color:#ffb5c9;font-family:Arial,sans-serif;font-size:clamp(6px,.9vw,10px);font-weight:bold;opacity:0;text-shadow:0 0 4px rgba(255,100,150,.8),0 0 9px rgba(255,60,130,.5);pointer-events:none;animation:appear .65s ease forwards}
-.heart-message{position:absolute;left:50%;bottom:12%;transform:translateX(-50%);white-space:nowrap;color:#ff9fba;font-family:Arial,sans-serif;font-size:clamp(25px,5vw,48px);font-weight:bold;text-shadow:0 0 10px #ff719b,0 0 30px rgba(255,70,130,.6);animation:pulse 1.4s ease-in-out infinite}
+.love-word{position:absolute;white-space:nowrap;transform:translate(-50%,-50%) scale(.2);color:#ff4fa3;font-family:Arial,sans-serif;font-size:clamp(6px,.9vw,10px);font-weight:bold;opacity:0;text-shadow:0 0 4px rgba(255,70,160,.95),0 0 9px rgba(255,40,150,.8),0 0 16px rgba(255,20,130,.45);pointer-events:none;animation:appear .65s ease forwards}
+.heart-message{position:absolute;z-index:5;left:50%;bottom:12%;transform:translateX(-50%);white-space:nowrap;color:#ff4fa3;font-family:Arial,sans-serif;font-size:clamp(30px,6vw,58px);font-weight:bold;text-shadow:0 0 8px #ff4fa3,0 0 18px #ff168a,0 0 36px rgba(255,20,140,.85);animation:pulse 1.4s ease-in-out infinite}
 #againButton,#backButton{position:fixed;bottom:20px;z-index:20;padding:11px 20px;border-radius:25px;color:#fff;font-size:15px;background:rgba(255,70,120,.15);border:1px solid rgba(255,130,160,.45);backdrop-filter:blur(8px);transition:.2s}
 #againButton{right:20px}#backButton{left:20px}
 #againButton:hover,#backButton:hover{background:rgba(255,70,120,.35);transform:scale(1.05)}
@@ -79,7 +79,7 @@ strong{color:#ffc0d4}
 
 <section class="heart-page" id="heartPage">
   <div id="heartContainer"></div>
-  <div class="heart-message">Te iubesc ❤️</div>
+  <div class="heart-message">I Love You</div>
   <button id="againButton" type="button">❤️ Încă o dată ❤️</button>
   <button id="backButton" type="button">← Înapoi</button>
 </section>
